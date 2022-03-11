@@ -349,7 +349,7 @@ p, label {
         top: 26vh;
     }
 
-    jl-navigtor-counter {
+    .jl-navigator-counter {
         width: 100%;
         height: 90px;
         display: block;
@@ -357,7 +357,7 @@ p, label {
         position: relative;
     }
 
-    jl-navigtor-counter:before {
+    .jl-navigator-counter:before {
         content: '';
         display: block;
         width: 35px;
@@ -368,7 +368,7 @@ p, label {
         left: 0;
     }
 
-    jl-navigtor-counter span {
+    .jl-navigator-counter span {
         font-family: 'Open Sans', sans-serif;
         font-size: 120px;
         line-height: 90px;
@@ -404,24 +404,24 @@ p, label {
         justify-content: center;
         align-items: center;
         background-color: #2C2C2C;
-        border-radius: 0 23px 23px 0;
+        border-radius: 23px;
     }
 
-    .jl-items-next-next > div{
+    .jl-items-next-prev > div {
         height: 32px;
     }
 
-    .jl-items-counter{
+    .jl-items-counter {
         font-family: 'Open Sans', sans-serif;
         color: #4D4C4C;
         line-height: 32px;
-
     }
 
-    .jl-item-prev, .jl-item-next{
+    .jl-item-prev, .jl-item-next {
         width: 45px;
         color: #2CCB69;
         text-align: center;
+        cursor: pointer;
     }
 
     .jl-items-counter span:nth-child(1){
@@ -665,4 +665,14 @@ p, label {
 
 .jl-fade-out{
     animation: fadeOut 2s forwards ease-out;
+}
+
+.jl-no-radius-left {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.jl-no-radius-right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
